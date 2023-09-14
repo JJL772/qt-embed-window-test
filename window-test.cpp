@@ -79,7 +79,7 @@ EmbeddedWindow::EmbeddedWindow(QWidget* parent, SDL_Window* window, void(*callba
 
     auto* timer = new QTimer(this);
     timer->setInterval(16);
-    connect(timer, &QTimer::timeout, [this, callback]() { callback(this); container_->repaint(); });
+    //connect(timer, &QTimer::timeout, [this, callback]() { callback(this); container_->repaint(); });
     timer->start();
 }
 

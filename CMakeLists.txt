@@ -21,3 +21,15 @@ target_link_libraries(
 
     SDL2 Qt6::Core Qt6::Widgets Qt6::Gui Qt6::CorePrivate Qt6::WidgetsPrivate Qt6::GuiPrivate GLEW GL
 )
+
+add_executable(
+    qt-foreign-window-test
+
+    foreign-window-test.cpp
+)
+
+target_link_libraries(
+    qt-foreign-window-test PRIVATE
+
+    SDL2 Qt6::Core Qt6::Widgets Qt6::Gui Qt6::CorePrivate Qt6::WidgetsPrivate Qt6::GuiPrivate GLEW GL
+)
